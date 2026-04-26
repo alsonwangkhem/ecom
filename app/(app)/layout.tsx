@@ -19,7 +19,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "suppressHydrationWarning", "font-mono", jetbrainsMono.variable)}
+      suppressHydrationWarning
+      className={cn("h-full", "antialiased", "font-mono", jetbrainsMono.variable)}
     >
       <body className="min-h-full flex flex-col">
         <TooltipProvider>{children}</TooltipProvider>
